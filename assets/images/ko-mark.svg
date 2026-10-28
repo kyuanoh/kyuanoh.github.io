@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">OKA</title>
+  <desc id="desc">OKA mark for Kyuan Oh</desc>
+  <rect width="512" height="512" fill="#20252b"/>
+  <rect x="25" y="25" width="462" height="462" fill="none" stroke="#aeb5bd" stroke-width="3"/>
+  <text x="256" y="325" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="178" font-weight="700" letter-spacing="-13" fill="#ffffff">OKA</text>
+  <line x1="128" y1="386" x2="384" y2="386" stroke="#aeb5bd" stroke-width="3"/>
+</svg>
