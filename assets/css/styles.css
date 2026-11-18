@@ -7,6 +7,9 @@
   --muted: #665f55;
   --accent: #24476a;
   --red: #9b1c31;
+  --serif: "Source Serif 4", "Noto Serif KR", Georgia, "Times New Roman", serif;
+  --sans: "Inter", "Noto Sans KR", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-serif: var(--serif);
 }
 
 * {
@@ -22,7 +25,18 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: "Noto Sans KR", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: var(--serif);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+strong,
+b {
+  font-weight: 600;
 }
 
 a {
@@ -74,7 +88,7 @@ a {
   display: flex;
   gap: 18px;
   color: var(--muted);
-  font-family: "Noto Sans KR", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: var(--serif);
 }
 
 .onepage-nav a {
@@ -171,14 +185,14 @@ p {
 .onepage-box h3 {
   margin-bottom: 5px;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.45;
 }
 
 .onepage-box h4 {
   margin-bottom: 5px;
   font-size: 0.98rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .onepage-bio p,
@@ -281,7 +295,7 @@ p {
 
 .news-list-onepage time {
   color: var(--text);
-  font-weight: 700;
+  font-weight: 600;
   font-variant-numeric: tabular-nums;
 }
 
@@ -457,6 +471,10 @@ p {
   line-height: 1.42 !important;
 }
 
+.education-copy .community-row {
+  color: var(--muted);
+}
+
 .community-row span:last-child {
   flex: 0 0 auto;
   color: var(--muted);
@@ -541,13 +559,14 @@ p {
 
 .venue,
 .year-label {
-  font-weight: 700;
+  font-weight: 600;
   font-variant-numeric: tabular-nums;
 }
 
 .venue {
   margin-bottom: 3px;
   font-size: 0.86rem;
+  font-weight: 800;
 }
 
 .year-label {
@@ -669,4 +688,16 @@ p {
 
 .news-cuai {
   color: #142846;
+}
+
+.korean-name {
+  font-family: "Noto Serif KR", var(--serif);
+}
+
+.onepage-publications p strong {
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
 }
