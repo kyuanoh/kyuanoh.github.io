@@ -508,10 +508,6 @@ p {
   color: var(--text);
 }
 
-.experience-role .meta-label {
-  color: var(--muted);
-}
-
 .experience-link {
   margin-top: 4px;
 }
