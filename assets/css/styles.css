@@ -126,7 +126,7 @@ a {
 .onepage-hero {
   display: grid;
   grid-template-columns: 240px minmax(0, 1fr);
-  gap: 34px;
+  gap: 26px;
   align-items: start;
 }
 
@@ -166,7 +166,7 @@ p {
 }
 
 .korean-name {
-  font-family: "Noto Serif KR", "Noto Serif CJK KR", serif;
+  font-family: "Noto Serif KR", var(--serif);
   font-size: 0.8em;
   font-weight: 1000;
   letter-spacing: 0;
@@ -202,7 +202,7 @@ p {
 }
 
 .onepage-bio p {
-  max-width: 710px;
+  max-width: none;
   margin-bottom: 12px;
 }
 
@@ -282,15 +282,27 @@ p {
 }
 
 .news-pager button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 28px;
   height: 28px;
+  padding: 0;
   border: 0;
   background: transparent;
   color: var(--accent);
   cursor: pointer;
-  font-family: var(--font-serif);
-  font-size: 28px;
-  line-height: 1;
+}
+
+.news-pager button svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.news-pager [data-news-status] {
+  line-height: 28px;
+  font-variant-numeric: tabular-nums;
 }
 
 .news-list-onepage time {
@@ -440,8 +452,7 @@ p {
   white-space: nowrap;
 }
 
-.education-copy p,
-.onepage-interest-list {
+.education-copy p {
   color: var(--text);
 }
 
@@ -483,9 +494,6 @@ p {
 }
 
 .education-muted,
-.muted-date,
-.inline-index,
-.note-index,
 .venue-muted,
 .scholarship-group > h3 span {
   color: var(--muted) !important;
@@ -500,40 +508,9 @@ p {
   margin-top: 4px;
 }
 
-.onepage-note {
-  border-top: 1px solid var(--line);
-  padding-top: 15px;
-}
-
-.research-fields,
 .scholarship-group {
   border-top: 0;
   padding-top: 0;
-}
-
-.research-fields {
-  margin-bottom: 16px;
-}
-
-.onepage-interest-list,
-.onepage-note-list {
-  margin: 0 0 0 18px;
-  padding: 0;
-  line-height: 1.65;
-}
-
-.onepage-interest-list {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px 34px;
-}
-
-.onepage-note-list {
-  color: var(--muted);
-}
-
-.ongoing-item {
-  margin-top: 8px;
 }
 
 .section-heading-row {
@@ -674,10 +651,6 @@ p {
   font-size: 0.88rem;
 }
 
-.news-cuai {
-  color: #2571b8;
-}
-
 .news-kaist {
   color: #005096;
 }
@@ -690,14 +663,11 @@ p {
   color: #142846;
 }
 
-.korean-name {
-  font-family: "Noto Serif KR", var(--serif);
-}
-
 .onepage-publications p strong {
   color: var(--text);
   font-weight: 600;
   text-decoration: underline;
+  text-decoration-color: #bababa;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
