@@ -504,6 +504,10 @@ p {
   line-height: 1.46;
 }
 
+.onepage-box .experience-role {
+  color: var(--text);
+}
+
 .experience-link {
   margin-top: 4px;
 }
