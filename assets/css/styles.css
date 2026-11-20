@@ -670,8 +670,4 @@ p {
 .onepage-publications p strong {
   color: var(--text);
   font-weight: 600;
-  text-decoration: underline;
-  text-decoration-color: #bababa;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
 }
