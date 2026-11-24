@@ -839,3 +839,32 @@ p {
   color: var(--accent);
   text-decoration: none;
 }
+
+/* Inline email link at the end of the Contact sentence */
+.contact-inline {
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.contact-inline .link-icon {
+  width: 0.9em;
+  height: 0.9em;
+  margin: 0 0.25em 0 0.05em;
+  vertical-align: -0.12em;
+}
+
+.contact-inline:hover {
+  color: var(--accent);
+}
+
+.contact-inline:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.contact-inline:hover span {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
