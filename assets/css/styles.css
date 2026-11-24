@@ -872,3 +872,7 @@ p {
 .onepage-publications p {
   line-height: 1.78;
 }
+
+#contact p {
+  color: var(--text);
+}
