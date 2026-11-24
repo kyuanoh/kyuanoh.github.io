@@ -787,3 +787,29 @@ p {
   object-fit: cover;
   object-position: center 25%;
 }
+
+/* Contact link: same style as profile links */
+.contact-text-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.contact-text-links a:hover {
+  color: var(--accent);
+}
+
+.contact-text-links a:hover span {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.contact-text-links .link-icon {
+  width: 14px;
+  height: 14px;
+}
