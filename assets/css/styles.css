@@ -868,3 +868,7 @@ p {
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
+
+.onepage-publications p {
+  line-height: 1.78;
+}
