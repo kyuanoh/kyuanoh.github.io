@@ -813,3 +813,29 @@ p {
   width: 14px;
   height: 14px;
 }
+
+/* Optical centring of link icons on the text (cap-height centre, not line box) */
+.profile-text-links,
+.profile-text-links a,
+.contact-text-links a,
+.profile-birthdate {
+  align-items: baseline;
+}
+
+.profile-text-links .link-icon,
+.contact-text-links .link-icon,
+.profile-birthdate svg {
+  width: 0.95em;
+  height: 0.95em;
+  align-self: baseline;
+  transform: translateY(0.15em);
+}
+
+.contact-text-links .contact-address {
+  color: var(--muted);
+}
+
+.contact-text-links a:hover .contact-address {
+  color: var(--accent);
+  text-decoration: none;
+}
