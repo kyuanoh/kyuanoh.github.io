@@ -770,7 +770,7 @@ p {
 
 /* Portrait stretches to the height of the bio text */
 .onepage-hero {
-  grid-template-columns: 260px minmax(0, 1fr);
+  grid-template-columns: 248px minmax(0, 1fr);
   align-items: stretch;
 }
 
