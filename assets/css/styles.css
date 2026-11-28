@@ -27,7 +27,7 @@ html {
 }
 
 body {
-  min-width: 1120px;
+  min-width: 1000px;
   margin: 0;
   background: var(--bg);
   color: var(--text);
@@ -845,4 +845,11 @@ b {
 
 .onepage-nav {
   color: var(--text);
+}
+
+/* Phones render the desktop layout scaled to fit; stop the browser from
+   inflating individual text blocks so the scaled page keeps its proportions. */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }

@@ -1,4 +1,4 @@
-const baseViewportWidth = 1120;
+const baseViewportWidth = 1000;
 const initialScale = Math.min(1, window.screen.width / baseViewportWidth);
 const viewportMeta = document.createElement("meta");
 
